@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
+
+@font-face {
+    font-family: "Ace";
+    src: url(../FONT/animeace2_bld.otf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f9fafb;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 12vw;
+    background: linear-gradient(180deg, #00B4DB, #0083B0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    box-shadow: 3px 0 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+nav img {
+    width: 70%;
+    background: white;
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.NavA {
+    background: white;
+    color: #0083B0;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: 0.5rem 0;
+    width: 80%;
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.NavA:hover {
+    background-color: #ffe600;
+    color: #333;
+}
+
+/* Main Content */
+main {
+    margin-left: 12vw;
+    padding: 2rem;
+    width: calc(100% - 12vw);
+    overflow-y: auto;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #0083B0;
+    color: white;
+    position: sticky;
+    bottom: 0;
+    margin-left: 12vw;
+    height: 4vh;
+}
+
+/* Popup */
+#PopUp {
+    background: #00B4DB;
+    color: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    position: relative;
+}
+
+#CloseBtn {
+    background: white;
+    color: #00B4DB;
+    border: none;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    transition: background 0.3s ease;
+}
+
+#CloseBtn:hover {
+    background: #ffe600;
+}
+
+/* Section Cards */
+.vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.Connecter, .Booster, .TousDehors {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.Connecter:hover, .Booster:hover, .TousDehors:hover {
+    transform: translateY(-5px);
+}
+
+.imgBody {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 1rem;
+    margin: 1rem 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-family: "Ace";
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #00B4DB;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 0.5rem 0;
+}
+
+/* Select dropdown */
+select {
+    width: 100%;
+    max-width: 700px;
+    height: 3rem;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    color: #333;
+    background-color: #eee;
+    font-family: 'Quicksand', sans-serif;
+    appearance: none;
+    cursor: pointer;
+}
+
+select:hover {
+    background-color: #ddd;
+}
