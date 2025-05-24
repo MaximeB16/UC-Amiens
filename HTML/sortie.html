@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fil Rouge</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/sortie.css">
+    <link rel="icon" type="image/png" href="../IMAGES/logoEtoile.png">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="../index.html"><img src="../IMAGES/logo_UC_2022_350.png" alt="Logo" style="width: 100px; height: auto; margin-bottom: 1rem;"></a>
+            <a href="./mission.html" class="NavA"><b>Notre Mission</b></a>
+            <a href="./sortie.html" class="NavA"><b>Sorties</b></a>
+            <a href="./contact.html" class="NavA"><b>Contact</b></a>
+            <a href="./expo.html" class="NavA"><b>Exposition</b></a>
+        </nav>
+        <main>
+            <!-- Cadres des sorties -->
+            <div class="Sorties">
+                <h1>Balade au marché de Noël</h1>
+                <img class="imgBox" src="../IMAGES/MarcheDeNoel/marchedenoelMiniature.png" alt="Marché de noël">
+            </div>
+            <div class="Sorties">
+                <h1>Distribution de panier gourmand</h1>
+                <img class="imgBox" src="../IMAGES/PanierGourmand/PanierGourmandMiniature.png" alt="Panier gourmand">
+            </div>
+            <div class="Sorties">
+                <h1>Commité de<br>lancement</h1>
+                <img class="imgBox" src="../IMAGES/Copil/CopilMiniature.png" alt="Copil">
+            </div>
+            <div class="Sorties">
+                <h1>Journée de solidaritée à<br>l'Aprémis</h1>
+                <img class="imgBox" src="../IMAGES/JourneeSolidariteApremis/JourneeSolidariteApremisMiniature.png" alt="Apremis">
+            </div>
+            <div class="Sorties">
+                <h1>Interview à<br>NRJ</h1>
+                <img class="imgBox" src="../IMAGES/NRJ/NRJMiniature.png" alt="NRJ">
+            </div>
+            <div class="Sorties">
+                <h1>La galette des<br>rois</h1>
+                <img class="imgBox" src="../IMAGES/Galette/GaletteMiniature.png" alt="Galette">
+            </div>
+        </main>
+    </div>
+
+    <!-- Pop-up pour afficher les images -->
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <span id="closePopup" class="close-button"><strong>&times;</strong></span>
+        </div>
+    </div>    
+    <script src="../JS/popUpSortie.js"></script>
+</body>
+</html>
