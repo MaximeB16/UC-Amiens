@@ -23,6 +23,26 @@ main {
     max-height: 90%;
     overflow-y: auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    z-index: 10001;
+}
+
+/* Conteneur de la popup (NOUVEAU - permet de passer au-dessus de la navbar) */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
 }
 
 /* Texte à gauche */
@@ -108,7 +128,7 @@ main {
     }
 }
 
-#Expooo{
+#Expooo {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
@@ -122,97 +142,94 @@ main {
 /* Mobile petits écrans */
 @media (max-width: 600px) {
     main {
-      padding: 1rem;
+        padding: 1rem;
     }
-  
+
     #Expooo {
-      flex-direction: column;
-      gap: 1rem;
+        flex-direction: column;
+        gap: 1rem;
     }
-  
+
     .Sorties {
-      width: 100%;
-      max-width: 100%;
-      text-align: center;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
     }
-  
+
     .Sorties img {
-      width: 90vw;
-      height: auto; /* Garde le ratio naturel */
-      max-height: 300px; /* limite la hauteur sur mobile */
+        width: 90vw;
+        height: auto;
+        max-height: 300px;
     }
-  
-    /* Popup */
+
     .popup-content {
-      flex-direction: column !important;
-      padding: 1rem !important;
-      max-width: 95% !important;
-      max-height: 95% !important;
+        flex-direction: column !important;
+        padding: 1rem !important;
+        max-width: 95% !important;
+        max-height: 95% !important;
     }
-  
+
     .popup-content p {
-      max-width: 100% !important;
-      font-size: 1.2rem !important;
-      padding: 1rem !important;
+        max-width: 100% !important;
+        font-size: 1.2rem !important;
+        padding: 1rem !important;
     }
-  
+
     .popup-content img,
     .popup-content video {
-      max-width: 90% !important;
-      max-height: 250px !important;
-      margin: 1rem auto !important;
+        max-width: 90% !important;
+        max-height: 250px !important;
+        margin: 1rem auto !important;
     }
-  
-    /* Fermer popup plus accessible */
+
     .close-button {
-      top: 10px !important;
-      right: 10px !important;
-      font-size: 1.5rem !important;
+        top: 10px !important;
+        right: 10px !important;
+        font-size: 1.5rem !important;
     }
-  }
-  
-  /* Tablettes */
-  @media (min-width: 601px) and (max-width: 900px) {
+}
+
+/* Tablettes */
+@media (min-width: 601px) and (max-width: 900px) {
     #Expooo {
-      gap: 1.2rem;
-      justify-content: center;
+        gap: 1.2rem;
+        justify-content: center;
     }
-  
+
     .Sorties {
-      width: 45%;
-      max-width: 45%;
-      text-align: center;
+        width: 45%;
+        max-width: 45%;
+        text-align: center;
     }
-  
+
     .Sorties img {
-      width: 100%;
-      height: 350px;
+        width: 100%;
+        height: 350px;
     }
-  
+
     .popup-content p {
-      font-size: 1.3rem;
+        font-size: 1.3rem;
     }
-  
+
     .popup-content img,
     .popup-content video {
-      max-width: 300px;
-      max-height: 300px;
+        max-width: 300px;
+        max-height: 300px;
     }
-  }
-  
-  /* Petits desktops */
-  @media (min-width: 901px) and (max-width: 1200px) {
+}
+
+/* Petits desktops */
+@media (min-width: 901px) and (max-width: 1200px) {
     #Expooo {
-      gap: 1.5rem;
+        gap: 1.5rem;
     }
-  
+
     .Sorties {
-      width: 30%;
-      max-width: 30%;
+        width: 30%;
+        max-width: 30%;
     }
-  
+
     .Sorties img {
-      height: 400px;
+        height: 400px;
     }
-  }
-  
+}
